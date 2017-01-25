@@ -1,0 +1,185 @@
+<html>
+
+<head>
+	<script language ="Javascript">
+
+function handleClick()
+  {         
+var amountCorrect = 0;          
+for(var i = 1; i <= 20; i++) {
+  var radios = document.getElementsByName('group'+i);
+  for(var j = 0; j < radios.length; j++) {
+    var radio = radios[j];
+    if(radio.value == "correct" && radio.checked) {
+      amountCorrect++;
+    }
+  }
+ }                   
+    alert("Percent Correct: " + amountCorrect/20 );
+	alert("Highlight above submit button for answers.  Hit the back button when done." );
+  }
+		</script>
+</head>
+
+<body>
+<form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+<br>
+<font size="8"> Sample Community College Entrance Exam</font><br><br>
+These are some sample questions you might find on an entrance exam.  You can cheat on this.  You can google the answers or use a calculator.<BR>
+<b>DON'T DO IT!</B> This is to test to see if you are college ready.  Cheating on this is just fooling yourself.<br><br>
+<font size="6">English Language Arts</font><br><br>
+
+DIRECTIONS: Select the best version of the underlined part of the sentence. There is a choice that is the same as the original sentence. If you think the original sentence is best, pick that choice.
+<br><br>
+1. Because of his longstanding reputation with the board of trustees, 
+he did not have to make the normally required presentation of<u> his proposal, therefore, 
+the board</u> was accused of failing to follow due process.<br>
+
+<input id="answer" type="radio" name="group1" value="wrong"> (A) his proposal, therefore, the board<br>
+<input id="answer" type="radio" name="group1" value="wrong"> (B) his proposal therefore, the board<br>
+<input id="answer" type="radio" name="group1" value="correct">(C) his proposal; therefore, the board<br>
+<input id="answer" type="radio" name="group1" value="wrong"> (D) his proposal, therefore the board<br><br>
+
+2. Ms. Ceita Hernandez, who is the founder of the Cuban-American Alliance,<u> and who has been</u> a child care advocate for over a decade.<br>
+
+<input id="answer" type="radio" name="group2" value="wrong">(A) and who has been<br>
+<input id="answer" type="radio" name="group2" value="wrong">(B) she has been<br>
+<input id="answer" type="radio" name="group2" value="wrong">(C) and she has been<br>
+<input id="answer" type="radio" name="group2" value="correct">(D) has been<br><br>
+
+3. Walt Disney World is a place of<u> enchantment and children and adults are entertained.</u><br>
+<input id="answer" type="radio" name="group3" value="wrong">(A) enchantment and children and adults are entertained<br>
+<input id="answer" type="radio" name="group3" value="correct" >(B) enchantment where children and adults are entertained<br>
+<input id="answer" type="radio" name="group3" value="wrong"> (C) enchantment, although children and adults are entertained<br>
+<input id="answer" type="radio" name="group3" value="wrong"> (D) enchantment, children and adults entertaining<br><br>
+
+4. Encouraged by the good report,<u> whistling down the hall is where the patient was.</u><br>
+<input id="answer" type="radio" name="group4" value="wrong">(A) enchantment and children and adults are entertained<br>
+<input id="answer" type="radio" name="group4" value="correct" >(B) the patient was whistling down the hall<br>
+<input id="answer" type="radio" name="group4" value="wrong"> (C) down the hall the patient was whistling<br>
+<input id="answer" type="radio" name="group4" value="wrong"> (D) whistling the patient was down the hall<br><br>
+
+5. Our family enjoys a wide array of sports:<u> skiing, to fish, and basketball.</u><br>
+<input id="answer" type="radio" name="group5" value="wrong">(A) skiing, to fish, and basketball<br>
+<input id="answer" type="radio" name="group5" value="correct" >(B) to ski, fish, and play basketball<br>
+<input id="answer" type="radio" name="group5" value="wrong"> (C) skiing, fishing and basketball<br>
+<input id="answer" type="radio" name="group5" value="wrong"> (D) skiing, fishing and playing basketball<br><br>
+
+6. Harriet<u> Tubman was a guide for the Underground Railroad.</u><br>
+<input id="answer" type="radio" name="group6" value="correct" >(A) Tubman was a guide<br>
+<input id="answer" type="radio" name="group6" value="wrong">(B) Tubman, who was a guide<br>
+<input id="answer" type="radio" name="group6" value="wrong"> (C) Tubman, a guide<br>
+<input id="answer" type="radio" name="group6" value="wrong"> (D) Tubman, who had been a guide<br><br>
+
+
+7.<u> The old school house that we toured is probably the second or third oldest in the western United States, this is because it is 175 years old.</u><br>
+
+<input id="answer" type="radio" name="group7" value="wrong">(A) The old school house that we toured is probably the second or third oldest in the western United States, this is because it is 175 years old.<br>
+<input id="answer" type="radio" name="group7" value="wrong"> (B) Because the old school house that we visited is 175 years old is why it may be the second or third oldest in the western United States.<br>
+<input id="answer" type="radio" name="group7" value="correct" >(C) The old school house that we toured, which is 175 years old, is probably the second or third oldest in the western United States.<br>
+<input id="answer" type="radio" name="group7" value="wrong">(D) The old school house that we toured is probably the second or third oldest in the western United States, it is 175 years old.<br><br>
+
+
+8.<u> High levels of sugar can cause hyperactivity in fruit juices that preschoolers consume.</u><br>
+
+<input id="answer" type="radio" name="group8" value="wrong">(A) High levels of sugar can cause hyperactivity in fruit juices that preschoolers consume.<br>
+<input id="answer" type="radio" name="group8" value="correct" >(B) High levels of sugar in fruit juices consumed by preschoolers can cause them to be hyperactive.<br>
+<input id="answer" type="radio" name="group8" value="wrong"> (C) High levels of sugar for preschoolers in fruit juices that they consume can cause hyperactivity.<br>
+<input id="answer" type="radio" name="group8" value="wrong"> (D) Hyperactivity can be caused in preschoolers with high levels of sugar that they consume in fruit juices.<br><br>
+
+
+DIRECTIONS: In the following questions, you are going to be asked to rewrite sentences in your head. You will be told exactly how to begin your new sentence. Keep in mind that your new sentence should be well written and should have the same meaning as the sentence given you.
+<br><br>
+
+9. Exhibiting great perseverance and stamina, Jolie beat her own record and won the Boston Marathon.Rewrite, beginning with:<u> Because Jolie had perseverance and stamina...</u> The next words will be<br>
+<input id="answer" type="radio" name="group9" value="wrong">(A) which beat<br>
+<input id="answer" type="radio" name="group9" value="wrong" >(B) so as to beat<br>
+<input id="answer" type="radio" name="group9" value="wrong"> (C) and she beat<br>
+<input id="answer" type="radio" name="group9" value="correct"> (D) she beat<br><br>
+
+
+10. Leaving his hometown as a recent college graduate and new teacher, Andrew moved to Miami, where he had done his student teaching. Rewrite, beginning with:<u> As a recent college graduate and new teacher...</u> The next words will be<br>
+<input id="answer" type="radio" name="group10" value="correct">(A) Andrew left his hometown<br>
+<input id="answer" type="radio" name="group10" value="wrong" >(B) Andrew left his hometown when<br>
+<input id="answer" type="radio" name="group10" value="wrong"> (C) who left his hometown<br>
+<input id="answer" type="radio" name="group10" value="wrong"> (D) he left his hometown<br><br>
+
+<br><br>
+<font size="6">Mathematics</font><br><br>
+
+11. 12x - 16y - 5x + y = <br>
+<input id="answer" type="radio" name="group11" value="wrong" >(A) 7x<sup>2</sup> - 15y<sup>2</sup><br>
+<input id="answer" type="radio" name="group11" value="wrong"> (B) 17x - 17y<br>
+<input id="answer" type="radio" name="group11" value="correct">(C) 7x - 15y<br>
+<input id="answer" type="radio" name="group11" value="wrong"> (D) 7 - 15y<br><br>
+
+12. (2x - 3)(2x + 3) = <br>
+<input id="answer" type="radio" name="group12" value="wrong" >(A) 2x<sup>2</sup> - 9<br>
+<input id="answer" type="radio" name="group12" value="correct"> (B) 4x<sup>2</sup> - 9<br>
+<input id="answer" type="radio" name="group12" value="wrong">(C) 4x<sup>2</sup> + 9<br>
+<input id="answer" type="radio" name="group12" value="wrong"> (D) 4x<sup>2</sup> - 6 - 9<br><br>
+
+13. On Monday, Dave drove exactly <i>m</i> miles. On Tuesday he drove 112 fewer miles than he drove on Monday. Which of the following expressions represents the total number of miles that Dave drove? <br>
+<input id="answer" type="radio" name="group13" value="wrong" >(A) <i>m</i> - 112<br>
+<input id="answer" type="radio" name="group13" value="wrong"> (B) 112 - <i>m</i><br>
+<input id="answer" type="radio" name="group13" value="wrong">(C) 112 - 2<i>m</i><br>
+<input id="answer" type="radio" name="group13" value="correct"> (D) 2<i>m</i> - 112<br><br>
+
+14. If 4x = 12 - 7x, then x = <br>
+<input id="answer" type="radio" name="group14" value="wrong" >(A) -3<br>
+<input id="answer" type="radio" name="group14" value="correct"> (B) 12/11<br>
+<input id="answer" type="radio" name="group14" value="wrong">(C) 11/12<br>
+<input id="answer" type="radio" name="group14" value="wrong"> (D) -12/11<br><br>
+
+15. Of the following, which is a factor of 4x<sup>3</sup> - 2x<sup>2</sup> + 4x ? <br>
+<input id="answer" type="radio" name="group15" value="correct" >(A) 2x<br>
+<input id="answer" type="radio" name="group15" value="wrong"> (B) 4x<br>
+<input id="answer" type="radio" name="group15" value="wrong">(C) 8x<br>
+<input id="answer" type="radio" name="group15" value="wrong"> (D) 2x<sup>2</sup><br><br>
+
+16. All the following points are on the graph of y = 3x + 1 , EXCEPT <br>
+<input id="answer" type="radio" name="group16" value="wrong" >(A) (-2, -5)<br>
+<input id="answer" type="radio" name="group16" value="wrong"> (B) (1, 4)<br>
+<input id="answer" type="radio" name="group16" value="wrong">(C) (0, 1)<br>
+<input id="answer" type="radio" name="group16" value="correct"> (D) (2, 6)<br><br>
+
+17.  For the system of equations below, what is the value of x ? <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  x + 2y = 15 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x - y = 3 <br><br>
+<input id="answer" type="radio" name="group17" value="wrong" >(A) 4<br>
+<input id="answer" type="radio" name="group17" value="wrong"> (B) 6<br>
+<input id="answer" type="radio" name="group17" value="correct">(C) 7<br>
+<input id="answer" type="radio" name="group17" value="wrong"> (D) 9<br><br>
+
+18.  Given <br><br>
+x= -|5| + |6|, y = |-5 + 6|, and z = |-5| + |6|<br><br>
+which one of the following is true about the numbers:<br> <br>
+<input id="answer" type="radio" name="group18" value="correct" >(A) x = y<br>
+<input id="answer" type="radio" name="group18" value="wrong"> (B) x = z<br>
+<input id="answer" type="radio" name="group18" value="wrong">(C) x = y = z<br>
+<input id="answer" type="radio" name="group18" value="wrong"> (D) x < y<br><br>
+
+19. Which of the following is a factor of 3a<sup>2</sup> - 17a + 20<br> <br>
+<input id="answer" type="radio" name="group19" value="wrong" >(A) 3a - 20<br>
+<input id="answer" type="radio" name="group19" value="correct"> (B) a - 4<br>
+<input id="answer" type="radio" name="group19" value="wrong">(C) a + 4<br>
+<input id="answer" type="radio" name="group19" value="wrong"> (D) 3a + 5<br><br>
+
+20. In a certain school there were 5 more seniors than juniors. In one marking period, 12 percent of the juniors<br>
+ and 10 percent of the seniors were on the honor roll. <br>
+ If the total number of juniors and seniors on the honor roll was 17,<br>
+ how many seniors were there in the school.<br> <br>
+<input id="answer" type="radio" name="group20" value="correct" >(A) 80<br>
+<input id="answer" type="radio" name="group20" value="wrong"> (B) 75<br>
+<input id="answer" type="radio" name="group20" value="wrong">(C) 155<br>
+<input id="answer" type="radio" name="group20" value="wrong"> (D) 8<br><br>
+
+<font color= "white"> 1.C, 2.D, 3.B, 4.B, 5.B, 6.A, 7.C, 8.B, 9.D, 10.A, <br> 11.C, 12.B, 13.D, 14.B, 15.A, 16.D, 17.C, 18.A, 19.B, 20.A</font>
+
+<br><br>
+<button class="submit" onclick="return handleClick();" type="submit">Submit</button>  
+
+</form>
+
+	
+</body>
+</html>
